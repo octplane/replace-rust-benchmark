@@ -6,6 +6,10 @@ use std::io::prelude::*;
 use std::fs::File;
 
 fn bench() {
+    // I have left, keys and values and the file read in this function
+    // because in real life, this will come from the outside Racket Caller
+    // and I wanted to simulate the C->Rust slight overhead by leaving these
+    // declaration and IO here.
 
     let keys= vec!["MÉCAN. DES FLUIDES.", "qqc.?", " :", " ds ", "rad.", "ANAT.", "dr.", "relig.", "PHYS. NUCL.", "CHRIST.", ", anthropol.", "dict. gén.", "REM. GÉN.", "élém.", "Rem.", ",,", "Hist.", "<sup>e</sup>&nbsp;s.", ",</span>", "NAV.", "phon.", "PHILOS.", "JUST.", "AUTOMOB.", "Corresp.", "v. aussi", "Fréq.", "P. métaph.", "Correspondantà", "p. oppos.", "technol.", "corresp.", "PATHOL.", "CONSTR.", "Empr.", "Forme graph.", "adv.", "attest.", "inf.", "THÉOL. CHRÉT.", "ÉTYMOL.", "Inf.", "inus.", "<div class=\"tlf_paraputir\">-", "compl.", "loc.", "GÉOGR.", "littér.", "Loc. proverbiales", "Loc.", "P. oppos.", "PHYSIOL.", "néol.", "Ac. Compl.", "TECHN. D'INFORM.", "P. méton.", "OCÉANOGR.", "concr.", "fém.", "sing.", "ADMIN.", "REM.", "cf.", "Gén. ", "pers.", "<span class=\"tlf_cdate\">, ", "qqn", "trans.", "apr.", " p.", " v.", "CHIM.", ", zool.", "BOT.", "``", "angl.", "TEXT.", "aéron.", "att.", "lat. vulg.", "constr.", "partic.", "dér.", "arg.", "électr.", "Arg.", "plur.", "abs.", "IMPR.", "Chimie ANC.", "abstr.", "HÉRALD.", "TECHNOL.", "ex.", "Étymol.", "MAR.", "lang.", "P. ext.", "P. hyperb.", "STAT.", "Loc. fig.", "dict.", "Empl.", "BIOL.", "fam.", "préf.", "synon.", "Dér", "qqf.", "P. anal.", "gén.", "Expr.", "Synon.", "Orth.", "masc.", "<div class=\"tlf_parothers\"></div>", "Fréquence abs. littér.", "CHORÉGR.", "rel.", "CHIR.", "Besch.", "MÉTÉOR.", "DÉR.", "<div id=\"art", "BBg.", "SYNT.", "métaph.", "V. ", "LING.", "péj.", "</sup>", "suff.", "Région.", "d'obj.", "GÉOMORPHOL.", "transcr.", "Bbg", "PRONONC.", "Anglo-amér.", "vx", "adj.", "GÉOL.", "Subst.", "Vx", "Pronom.", "au fig.", "Ac.", "subst.", "suj.", "DR.", "Prononc.", "docum.", "HIST.", "a.fr.", "pop.", "réfl.", "ÉLECTR.", "pronom.", "Histoire NAT.", "constr. adv.", "Au fig.", "BBG."];
 
