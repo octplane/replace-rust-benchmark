@@ -7,6 +7,7 @@ authors = ["Pierre Baillet <pierre@baillet.name>"]
 
 libc = "*"
 chrono = "*"
+aho-corasick="*"
 
 [profile.release]
 debug = true
